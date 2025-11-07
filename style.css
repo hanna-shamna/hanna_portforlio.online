@@ -9,7 +9,7 @@ body {
 .profile-pic {
   width: 120px;        /* Size */
   height: 120px;
-  border-radius: 50%;  /* Makes it round */
+  border-radius: 40%;  /* Makes it round */
   object-fit: cover;   /* Ensures proper crop */
   border: 3px solid #ffffff;
   margin-top: 20px;
