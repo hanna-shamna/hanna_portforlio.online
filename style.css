@@ -13,6 +13,7 @@ body {
   object-fit: cover;   /* Ensures proper crop */
   border: 3px solid #ffffff;
   margin-top: 20px;
+  margin-left: -40px;
 }
 /* === Header === */
 header {
