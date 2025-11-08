@@ -47,15 +47,9 @@ header {
 
 #about {
   width: 70%;
-  margin: 40px auto;   /* centers the block */
-  text-align: justify; /* aligns text in clean straight lines */
+  margin: 40px auto;
+  text-align: center;   /* ⬅ centers text */
 }
-
-#about h2 {
-  text-align: center;  /* only heading stays centered */
-}
-
-
 
 #skills {
   width: 70%;
