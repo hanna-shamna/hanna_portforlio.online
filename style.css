@@ -83,6 +83,13 @@ h2 {
   font-size: 15px;
 }
 
+#skills ul {
+  list-style-type: none;   /* removes bullets */
+  padding-left: 0;         /* removes indent */
+  margin: 0;
+}
+
+
 /* === Projects === */
 .project-card {
   background: #2b2b2b;
