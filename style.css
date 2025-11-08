@@ -51,11 +51,16 @@ header {
   text-align: center;   /* ⬅ centers text */
 }
 
-.small-bar {
-  width: 40px;
+.section-bar {
+  width: 200px;                 /* <-- change length here */
   height: 2px;
-  background: rgba(255,255,255,0.4);
   margin: 40px auto;
+  background: linear-gradient(
+      to right,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.5) 50%,
+      rgba(255,255,255,0) 100%
+  );
   border-radius: 2px;
 }
 
