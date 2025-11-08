@@ -52,7 +52,7 @@ header {
 }
 
 .section-bar {
-  width: 200px;                 /* <-- change length here */
+  width: 500px;                 /* <-- change length here */
   height: 2px;
   margin: 40px auto;
   background: linear-gradient(
