@@ -45,9 +45,12 @@ header {
   transition: 0.3s;
 }
 
-#about p {
-  text-align: center;
+#about {
+  width: 70%;
+  margin: 40px auto;
+  text-align: center;   /* ⬅ centers text */
 }
+
 
 
 #skills {
