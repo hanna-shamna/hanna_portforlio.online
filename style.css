@@ -46,24 +46,10 @@ header {
 }
 
 
-/* === Sections === */
-section {
-  padding: 20px 40px;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* === Headings === */
-h2 {
-  margin-top: 40px;
-  border-bottom: 2px solid #444;
-  padding-bottom: 10px;
-}
-
 #skills {
   width: 70%;
   margin: 40px auto;
-  text-align: center;     /* center text */
+  text-align: center;
 }
 
 #skills h2 {
@@ -77,16 +63,16 @@ h2 {
   margin-bottom: 10px;
 }
 
-#skills p {
-  color: #ddd;
-  margin-bottom: 10px;
-  font-size: 15px;
+#skills ul {
+  list-style-type: none;   /* remove bullets */
+  padding-left: 0;
+  margin: 0;
 }
 
-#skills ul {
-  list-style-type: none;   /* removes bullets */
-  padding-left: 0;         /* removes indent */
-  margin: 0;
+#skills li {
+  color: #ddd;
+  font-size: 15px;
+  margin: 4px 0;
 }
 
 
