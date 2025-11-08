@@ -50,6 +50,14 @@ header {
   transform: scale(1.05);
 }
 
+.quick-links a::after {
+  content: " | ";
+  color: #000;
+}
+
+.quick-links a:last-child::after {
+  content: "";
+}
 
 /* === Sections === */
 section {
