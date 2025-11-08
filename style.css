@@ -108,6 +108,17 @@ h2 {
   font-size: 15px;
 }
 
+.skill-category ul {
+  list-style-type: none;   /* ← removes bullets */
+  padding-left: 0;         /* ← removes indent */
+}
+
+.skill-category li {
+  color: #ddd;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
 
 /* === Projects === */
 .project-card {
