@@ -135,8 +135,8 @@ section {
 }
 
 .project-detail-img {
-  width: 25%;
-  max-width: 220px;
+  width: 60%;
+  max-width: 400px;
   display: block;
   margin: 0 auto 25px auto;
   border-radius: 8px;
