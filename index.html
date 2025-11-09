@@ -111,7 +111,27 @@ i<!DOCTYPE html>
       <img src="NDVI.jpg" alt="Vegetation Analysis">
       <h3>Vegetation Analysis in Trivandrum</h3>
       <p>Performed temporal analysis of vegetation health using NDVI over time (2015-2025)</p>
-      <a href="project1.html" class="btn" target="_blank">View Article</a>
+      <a class="btn" onclick="openModal('ndvi-modal')">View Article</a>
+      
+      <!-- MODAL -->
+<div id="ndvi-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('ndvi-modal')">&times;</span>
+
+    <h2>NDVI Analysis Study</h2>
+
+    <img src="images/project1.jpg" alt="NDVI Analysis">
+
+    <p>
+      Short scientific explanation of NDVI analysis here…  
+      Example:  
+      NDVI was calculated using near-infrared and red bands to evaluate vegetation
+      health. High NDVI values were observed in…
+
+      (You can replace this with your real text)
+    </p>
+  </div>
+</div>
     </div>
 
   </div>
