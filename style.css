@@ -143,10 +143,26 @@ section {
   display: block;
   margin: 0 auto 15px auto;
 }
+/* ✅ Mobile-only styling */
 @media (max-width: 600px) {
+
   .project-card img {
-    max-width: 250px;   /* ✅ smaller on phones */
+    margin: 0 auto 6px auto;   /* smaller spacing under image */
+    max-width: 250px;          /* optional: smaller thumbnail on phone */
+    height: auto;
   }
+
+  .project-card h3 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .project-card p {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+}
+
 }
 
 
