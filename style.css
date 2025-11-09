@@ -212,29 +212,6 @@ section {
   color: #fff;
 }
 
-.modal-content img {
-  width: 100%;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto 20px auto;
-  border-radius: 8px;
-}
-
-  @media (max-width: 600px) {
-
-  .modal-content {
-    width: 92%;
-    max-height: 80vh;   /* slightly shorter for screens */
-    margin: 40px auto;
-    padding: 16px;
-  }
-
-  .modal-content img {
-    max-width: 240px;   /* ✅ smaller image on mobile */
-  }
-}
-
-
 /* === Footer === */
 footer {
   text-align: center;
