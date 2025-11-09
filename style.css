@@ -134,13 +134,16 @@ section {
   margin-bottom: 20px;
 }
 
-.project-detail-img {
-  width: 40%;
-  max-width: 150px;
-  display: block;
-  margin: 0 auto 25px auto;
+/* 🔹 Project Card Image — smaller thumbnail */
+.project-card img {
+  width: 120px;      /* adjust size */
+  height: 120px;     /* keep square */
+  object-fit: cover; /* crop nicely */
   border-radius: 8px;
+  display: block;
+  margin: 0 auto 15px auto;
 }
+
 
 /* MODAL BACKDROP */
 .modal {
