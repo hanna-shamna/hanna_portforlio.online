@@ -143,6 +143,12 @@ section {
   display: block;
   margin: 0 auto 15px auto;
 }
+@media (max-width: 600px) {
+  .project-card img {
+    max-width: 250px;   /* ✅ smaller on phones */
+  }
+}
+
 
 
 /* MODAL BACKDROP */
