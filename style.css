@@ -172,8 +172,9 @@ section {
 }
 
 #modal-img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  max-width: 80%;
+  max-height: 60vh;
   object-fit: contain;
   touch-action: pinch-zoom;   /* ✅ allows pinch zoom */
   border-radius: 10px;
