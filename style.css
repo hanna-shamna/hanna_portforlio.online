@@ -271,13 +271,18 @@ body.modal-open {
   #contact {
     width: 90%;
     padding: 20px;
+    background-color: #2b2b2b; /* ensure mobile background stays dark grey */
   }
   
   .contact-line {
     font-size: 16px;
+    color: #000000; /* force black on mobile */
+  }
+
+  .contact-link {
+    color: #000000; /* force black links on mobile */
   }
 }
-
 
 /* Close button text modals */
 .close {
