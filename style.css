@@ -30,10 +30,11 @@ body, html {
   width: 80%;
   margin: 0 auto;
 }
+
 #profile-contact {
   margin-top: 15px;
-   display: inline-block;   /* keeps width only around the text */
-  text-align: left;  
+  display: inline-block;
+  text-align: left;
 }
 
 #profile-contact .contact-line {
@@ -47,12 +48,10 @@ body, html {
   font-weight: 500;
 }
 
-/* Hover removed, link stays black */
 .contact-link:hover {
   color: #ffffff !important;
   text-decoration: none !important;
 }
-
 
 /* === Header === */
 header {
@@ -159,6 +158,7 @@ section {
 .project-card p {
   margin-bottom: 8px;
 }
+
 .projects-wrapper {
   position: relative;
   margin: 20px 0;
@@ -202,7 +202,6 @@ section {
   right: 10px;
 }
 
-
 .project-card img {
   width: 600px;
   height: 450px;
@@ -218,7 +217,8 @@ section {
   text-decoration: none;
 }
 
-/* MODAL — IMAGE ONLY */
+/* =============== IMAGE MODAL FIX =============== */
+
 #image-modal {
   display: none;
   position: fixed;
@@ -244,19 +244,13 @@ section {
 }
 
 #modal-img {
-  max-width: 70vw;
-  max-height: 70vh;
+  max-width: 90vw;
+  max-height: 90vh;
   object-fit: contain;
-  transition: transform 0.25s ease;
   display: block;
   margin: auto;
-}
-
-@media (max-width: 600px) {
-  #modal-img {
-    max-width: 90vw;
-    max-height: 60vh;
-  }
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
 }
 
 #image-modal .close {
@@ -272,6 +266,7 @@ body.modal-open {
   overflow: hidden;
 }
 
+/* Text helpers */
 .center-text {
   text-align: center;
 }
@@ -315,11 +310,12 @@ body.modal-open {
   border-radius: 3px;
 }
 
+/* Contact */
 #contact {
   width: 70%;
   margin: 40px auto;
   text-align: center;
-  background-color: #D9D9D9; /* dark grey */
+  background-color: #D9D9D9;
   padding: 25px 20px;
   border-radius: 12px;
   border: 1px solid #444;
@@ -331,12 +327,11 @@ body.modal-open {
 }
 
 .contact-link {
-  color: #000000; /* black text */
+  color: #000000;
   font-weight: 500;
-  text-decoration: none; /* no underline */
+  text-decoration: none;
 }
 
-/* Hover removed, link stays black */
 .contact-link:hover {
   color: #000000 !important;
   text-decoration: none !important;
@@ -353,7 +348,6 @@ body.modal-open {
   }
 }
 
-
 /* Close button text modals */
 .close {
   float: right;
@@ -365,7 +359,6 @@ body.modal-open {
 .close:hover {
   color: #fff;
 }
-
 
 /* === Footer === */
 footer {
@@ -393,7 +386,7 @@ footer {
   }
 
   #modal-img {
-    max-width: 90vw;
+    max-width: 95vw;
     max-height: 70vh;
   }
 
@@ -404,3 +397,4 @@ footer {
     padding: 16px;
   }
 }
+
