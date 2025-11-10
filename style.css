@@ -138,8 +138,8 @@ section {
 }
 
 .project-card img {
-  width: 350px;
-  height: 300px;
+  width: 600px;
+  height: 450px;
   object-fit: contain;
   border-radius: 8px;
   display: block;
