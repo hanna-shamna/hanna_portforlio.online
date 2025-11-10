@@ -232,36 +232,52 @@ body.modal-open {
   border-radius: 3px;
 }
 
+/* Contact Section - Light Grey */
 #contact {
   width: 70%;
   margin: 40px auto;
-  background: linear-gradient(135deg, #1f1f1f, #292929);
   text-align: center;
-  padding: 30px;
+  background-color: #d9d9d9; /* light grey background */
+  padding: 25px 20px;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255,255,255,0.1);
+  border: 1px solid #ccc; /* optional subtle border */
 }
 
-#contact h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+/* Contact lines with emojis */
+.contact-line {
+  margin: 12px 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333; /* dark grey text */
 }
 
-#contact p {
-  font-size: 1rem;
-  margin: 8px 0;
-}
-
-#contact a.contact-link {
-  color: #ffffff;           /* White text */
+/* Links (email/LinkedIn) */
+.contact-link {
+  color: #333333; /* match text color */
   font-weight: 500;
-  text-decoration: none;    /* Remove underline */
+  text-decoration: none; /* remove underline */
+  margin-left: 6px;
 }
 
-#contact a.contact-link:hover {
-  text-decoration: underline;
-  color: #66aaff;           /* Light blue hover */
+.contact-link:hover {
+  color: #555555; /* slightly darker on hover */
+  text-decoration: underline; 
 }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  #contact {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .contact-line {
+    font-size: 16px;
+  }
+}
+
 
 /* Close button text modals */
 .close {
