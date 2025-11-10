@@ -237,7 +237,7 @@ body.modal-open {
   width: 70%;
   margin: 40px auto;
   text-align: center;
-  background-color: #1c1c1c /* dark grey background */
+  background-color: #62B8A4; /* dark grey background */
   padding: 25px 20px;
   border-radius: 12px;
   
@@ -271,7 +271,7 @@ body.modal-open {
   #contact {
     width: 90%;
     padding: 20px;
-    background-color: #1c1c1c /* ensure mobile background stays dark grey */
+    background-color: #62B8A4; /* ensure mobile background stays dark grey */
   }
   
   .contact-line {
