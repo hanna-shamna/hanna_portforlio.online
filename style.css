@@ -32,6 +32,8 @@ body, html {
 }
 #profile-contact {
   margin-top: 15px;
+   display: inline-block;   /* keeps width only around the text */
+  text-align: left;  
 }
 
 #profile-contact .contact-line {
