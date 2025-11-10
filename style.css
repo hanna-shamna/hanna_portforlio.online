@@ -136,7 +136,6 @@ section {
 .project-card p {
   margin-bottom: 8px;
 }
-
 .projects-wrapper {
   position: relative;
   margin: 20px 0;
@@ -148,7 +147,8 @@ section {
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 15px;
-  padding: 10px 40px; /* space for arrows */
+  justify-content: center;
+  padding: 10px 0;
 }
 
 /* Hide scrollbar */
@@ -161,8 +161,8 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
-  background-color: rgba(0,0,0,0.6);
+  z-index: 20;
+  background-color: rgba(0,0,0,0.7);
   color: white;
   border: none;
   font-size: 2rem;
@@ -172,27 +172,11 @@ section {
 }
 
 .scroll-btn.left {
-  left: 0;
+  left: 10px;
 }
 
 .scroll-btn.right {
-  right: 0;
-}
-
-.scroll-btn:hover {
-  background-color: rgba(0,0,0,0.9);
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .projects-container {
-    padding: 10px 20px; /* reduce side padding on mobile */
-  }
-
-  .scroll-btn {
-    font-size: 1.8rem;
-    padding: 8px;
-  }
+  right: 10px;
 }
 
 
