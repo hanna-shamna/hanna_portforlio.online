@@ -250,19 +250,19 @@ body.modal-open {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff; /* dark grey text */
+  color: #ffffff !important; /* dark grey text */
 }
 
 /* Links (email/LinkedIn) */
 .contact-link {
-  color: #ffffff; /* match text color */
+  color: #ffffff !important; /* match text color */
   font-weight: 500;
   text-decoration: none; /* remove underline */
   margin-left: 6px;
 }
 
 .contact-link:hover {
-  color: #ffffff;; /* slightly darker on hover */
+  color: #ffffff !important; /* slightly darker on hover */
   text-decoration: underline; 
 }
 
@@ -276,11 +276,11 @@ body.modal-open {
   
   .contact-line {
     font-size: 16px;
-    color: #ffffff; /* force black on mobile */
+    color: #ffffff !important; /* force black on mobile */
   }
 
   .contact-link {
-    color: #ffffff; /* force black links on mobile */
+    color: #ffffff !important; /* force black links on mobile */
   }
 }
 
