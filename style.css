@@ -45,8 +45,10 @@ body, html {
   font-weight: 500;
 }
 
-#profile-contact .contact-link:hover {
-  text-decoration: underline;
+/* Hover removed, link stays black */
+.contact-link:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 
