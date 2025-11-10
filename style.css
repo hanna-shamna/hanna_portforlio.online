@@ -152,43 +152,41 @@ section {
     height: auto;
   }
 
-  /* Overlay */
-#image-modal {
+  #image-modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0,0,0,0.9);
   z-index: 2000;
+  overflow: auto;     /* ✅ allow scrolling if needed */
 }
 
-/* Box for image */
 .image-box {
-  width: 90%;
-  max-width: 600px;
-  max-height: 85vh;
-  margin: 40px auto;
+  max-width: 90%;
+  max-height: 90vh;
+  margin: auto;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
-/* Image styles */
 #modal-img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
   object-fit: contain;
+  touch-action: pinch-zoom;   /* ✅ allows pinch zoom */
+  border-radius: 10px;
 }
 
-/* Close button */
-#image-modal .close {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
+  @media (max-width: 600px) {
+  #modal-img {
+    max-width: 95%;
+    max-height: 80vh;
+  }
+}
+#modal-img {
+  cursor: zoom-in;
 }
 
   .project-card h3 {
