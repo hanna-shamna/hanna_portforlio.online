@@ -178,17 +178,10 @@ section {
 }
 
 #modal-img {
-  max-width: none;
-  max-height: none;
-  width: auto;
-  height: auto;
+  max-width: 90vw;
+  max-height: 90vh;
   object-fit: contain;
-  border-radius: 10px;
-
-  /* allow dragging */
-  cursor: grab;
-  user-select: none;
-  touch-action: none;   /* important for pinch + drag */
+  transition: transform 0.25s ease;
 }
 
 #image-modal .close {
