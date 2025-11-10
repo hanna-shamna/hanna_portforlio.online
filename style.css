@@ -137,6 +137,65 @@ section {
   margin-bottom: 8px;
 }
 
+.projects-wrapper {
+  position: relative;
+  margin: 20px 0;
+}
+
+/* Horizontal scroll container */
+.projects-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  padding: 10px 40px; /* space for arrows */
+}
+
+/* Hide scrollbar */
+.projects-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scroll buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .projects-container {
+    padding: 10px 20px; /* reduce side padding on mobile */
+  }
+
+  .scroll-btn {
+    font-size: 1.8rem;
+    padding: 8px;
+  }
+}
+
+
 .project-card img {
   width: 600px;
   height: 450px;
