@@ -2,9 +2,9 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #1c1c1c;   /* Dark gray background */
-  color: #ffffff;        /* White text */
-  text-align: center;    /* Center text globally */
+  background: #1c1c1c;
+  color: #ffffff;
+  text-align: center;
 }
 
 body, html {
@@ -12,22 +12,25 @@ body, html {
   overflow-x: hidden;
 }
 
+/* Profile Section */
 .profile-pic {
-  width: 150px;        /* Size */
+  width: 150px;
   height: 150px;
-  border-radius: 50%;  /* Makes it round */
-  object-fit: cover;   /* Ensures proper crop */
+  border-radius: 50%;
+  object-fit: cover;
   border: 3px solid #ffffff;
   margin-top: 40px;
   margin-left: -40px;
 }
+
 #profile {
-  background: rgba(255,255,255,0.05);   /* lighter tone */
+  background: rgba(255,255,255,0.05);
   padding: 40px 0;
   border-radius: 10px;
   width: 80%;
   margin: 0 auto;
 }
+
 /* === Header === */
 header {
   background: #000000;
@@ -35,6 +38,7 @@ header {
   padding: 60px 20px;
 }
 
+/* Quick Links */
 .quick-links {
   background: #ffffff;
   padding: 20px;
@@ -45,12 +49,13 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  box-shadow: 0 0 10px 
+  box-shadow: 0 0 10px;
+  opacity: 0.9;
 }
 
 .quick-links a {
   color: #000;
-  width: 50%
+  width: 50%;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
@@ -60,18 +65,19 @@ header {
 }
 
 section {
-  scroll-margin-top: 100px;   /* adjust value as needed */
+  scroll-margin-top: 100px;
 }
 
-
+/* About */
 #about {
   width: 70%;
   margin: 40px auto;
-  text-align: center;   /* ⬅ centers text */
+  text-align: center;
 }
 
+/* Section Divider */
 .section-bar {
-  width: 500px;                 /* <-- change length here */
+  width: 500px;
   height: 2px;
   margin: 40px auto;
   background: linear-gradient(
@@ -83,7 +89,7 @@ section {
   border-radius: 2px;
 }
 
-
+/* Skills */
 #skills {
   width: 70%;
   margin: 40px auto;
@@ -102,7 +108,7 @@ section {
 }
 
 #skills ul {
-  list-style-type: none;   /* remove bullets */
+  list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
@@ -113,7 +119,6 @@ section {
   margin: 4px 0;
 }
 
-
 /* === Projects === */
 .project-card {
   background: #2b2b2b;
@@ -123,97 +128,75 @@ section {
   border-radius: 5px;
 }
 
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.project-card p {
+  margin-bottom: 8px;
+}
+
+.project-card img {
+  width: 350px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 15px auto;
+  cursor: pointer;
+}
+
 .project-card a {
   color: #66aaff;
   text-decoration: none;
 }
-.project-detail {
-  width: 70%;
-  margin: 40px auto;
-  text-align: justify;
-  color: #ddd;
-}
 
-.project-detail h1 {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-/* 🔹 Project Card Image — smaller thumbnail */
-.project-card img {
-  width: 600px;      /* adjust size */
-  height: 500px;     /* keep square */
-  object-fit: contain; 
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 15px auto;
-}
-/* ✅ Mobile-only styling */
-@media (max-width: 600px) {
-
-  .project-card img {
-    margin: 0 auto 6px auto;   /* smaller spacing under image */
-    max-width: 250px;          /* optional: smaller thumbnail on phone */
-    height: auto;
-  }
-
-  #image-modal {
+/* MODAL — IMAGE ONLY */
+#image-modal {
   display: none;
   position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.9);
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
   z-index: 2000;
-  overflow: auto;     /* ✅ allow scrolling if needed */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-box {
-  max-width: 100%;
-  max-height: 100vh;
-  margin: auto;
   position: relative;
   display: flex;
-  padding: 10%;
   justify-content: center;
   align-items: center;
 }
 
 #modal-img {
-  width: auto;
-  max-width: 80%;
-  max-height: 60vh;
+  max-width: 75vw;
+  max-height: 55vh;
   object-fit: contain;
-  touch-action: pinch-zoom;   /* ✅ allows pinch zoom */
   border-radius: 10px;
+  touch-action: pinch-zoom;
 }
 
-  @media (max-width: 600px) {
-  #modal-img {
-    max-width: 95%;
-    max-height: 80vh;
-  }
-}
-#modal-img {
-  cursor: zoom-in;
-}
-
-  .project-card h3 {
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-  
-  .project-card h3 {
-  font-size: 1.3rem;   /* increase size */
-  font-weight: 600;
+#image-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
 }
 
-  .project-card p {
-    margin-top: 0;
-    margin-bottom: 6px;
-  }
+body.modal-open {
+  overflow: hidden;
 }
-  
-/* MODAL BACKDROP */
+
+/* MODAL CARD CONTENT */
 .modal {
   display: none;
   position: fixed;
@@ -230,10 +213,8 @@ section {
   background: #2a2a2a;
   width: 80%;
   max-width: 700px;
-
-  max-height: 80vh;     /* ✅ limits size */
-  overflow-y: auto;     /* ✅ enables scroll inside */
-
+  max-height: 80vh;
+  overflow-y: auto;
   margin: 80px auto;
   padding: 25px;
   border-radius: 10px;
@@ -249,56 +230,8 @@ section {
   background: rgba(255,255,255,0.3);
   border-radius: 3px;
 }
-@media (max-width: 600px) {
 
-  .modal-content {
-    width: 92%;
-    max-height: 80vh;   /* slightly shorter for screens */
-    margin: 40px auto;
-    padding: 16px;
-  }
-
-  .modal-content img {
-    max-width: 240px;   /* ✅ smaller image on mobile */
-  }
-}
-
-@media (max-width: 600px) {
-
-  .modal-content {
-    width: 92%;
-    max-height: 80vh;   /* fit inside phone screen */
-    margin: 30px auto;
-    padding: 14px;
-  }
-
-  .modal-content img {
-    max-width: 230px;   /* smaller image for mobile */
-    margin-bottom: 10px;
-  }
-
-  .modal-content h2 {
-    font-size: 1.3rem;   /* slightly smaller heading */
-  }
-
-  .modal-content p {
-    font-size: 0.9rem;   /* more readable */
-    line-height: 1.4;
-  }
-}
-@media (max-width: 600px) {
-  #modal-img {
-    max-width: 70vw;   /* slightly smaller */
-    max-height: 50vh;
-  }
-}
-
-body.modal-open {
-  overflow: hidden;
-}
-
-
-/* Close button */
+/* Close button text modals */
 .close {
   float: right;
   font-size: 30px;
@@ -310,6 +243,7 @@ body.modal-open {
   color: #fff;
 }
 
+
 /* === Footer === */
 footer {
   text-align: center;
@@ -319,3 +253,31 @@ footer {
   margin-top: 40px;
 }
 
+/* ✅ MOBILE FIXES */
+@media (max-width: 600px) {
+
+  .quick-links {
+    width: 85%;
+  }
+
+  #about, #skills {
+    width: 90%;
+  }
+
+  .project-card img {
+    max-width: 250px;
+    height: auto;
+  }
+
+  #modal-img {
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+
+  .modal-content {
+    width: 92%;
+    max-height: 80vh;
+    margin: 40px auto;
+    padding: 16px;
+  }
+}
