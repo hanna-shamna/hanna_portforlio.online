@@ -163,7 +163,6 @@ section {
   background: rgba(0,0,0,0.85);
   z-index: 2000;
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
