@@ -108,7 +108,7 @@ i<!DOCTYPE html>
 
     <!-- PROJECT 1 -->
     <div class="project-card">
-      <img src="NDVI.jpg" alt="Vegetation Analysis">
+      <img src="NDVI.jpg" alt="Vegetation Analysis" onclick="openImage('NDVI.jpg')">
       <h3>Vegetation Analysis in Trivandrum</h3>
       <p>Performed temporal analysis of vegetation health using NDVI over time (2015-2025)</p>
       <a class="btn" onclick="openModal('ndvi-modal')">View Article</a>
@@ -152,6 +152,12 @@ i<!DOCTYPE html>
     <p>© 2025 Hanna Shamna</p>
   </footer>
   <script src="script.js"></script>
+  <div id="image-modal" class="modal">
+  <div class="image-box">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img id="modal-img" src="">
+  </div>
+</div>
 </body>
 </html>
 
