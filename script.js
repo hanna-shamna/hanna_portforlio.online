@@ -94,3 +94,8 @@ modalImg.addEventListener("touchstart", (e) => {
   }
   lastTap = now;
 });
+
+function scrollProjects(amount) {
+  const container = document.querySelector(".projects-container");
+  container.scrollBy({ left: amount, behavior: "smooth" });
+}
