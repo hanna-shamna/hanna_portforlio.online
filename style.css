@@ -178,8 +178,8 @@ section {
 }
 
 #modal-img {
-  max-width: 75vw;
-  max-height: 55vh;
+  max-width: 80vw;
+  max-height: 60vh;
   object-fit: contain;
   border-radius: 10px;
   touch-action: pinch-zoom;
@@ -188,7 +188,7 @@ section {
 #image-modal .close {
   position: absolute;
   top: 20px;
-  right: 34px;
+  right: 40px;
   font-size: 2rem;
   cursor: pointer;
   color: white;
