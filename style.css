@@ -272,6 +272,27 @@ section {
   z-index: 9999;
 }
 
+@media (max-width: 600px) {
+
+  #image-modal .image-box {
+    max-width: 95%;
+    max-height: 90%;
+    padding: 8px 8px 0 8px; /* top padding for close button */
+  }
+
+  #image-modal img {
+    max-width: 90vw;
+    max-height: 70vh; /* slightly smaller for mobile */
+  }
+
+  #image-modal .close-img {
+    font-size: 2rem;
+    top: 5px;
+    right: 5px;
+    padding: 4px 8px;
+  }
+}
+
 
 
 /* Disable background scroll when modal open */
