@@ -223,18 +223,6 @@ section {
 
 /* ✅ FIX IMAGE MODAL POSITION + LAYER */
 
-/* ✅ FIX CLOSE BUTTON INSIDE image-box */
-#image-modal .close-img {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: white;
-  z-index: 9999;
-}
-
-
 #image-modal .close-img:hover {
   color: #ffdddd;
 }
@@ -252,14 +240,17 @@ section {
 }
 
 /* ✅ Ensure image-box becomes relative container */
+
 #image-modal .image-box {
-  position: relative;
+  position: relative;           /* so close button is relative to box */
   max-width: 90%;
   max-height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;        /* shrink-wrap to image */
+  background: #222;             /* optional: modal box background */
+  border-radius: 10px;
+  padding: 10px 10px 0 10px;   /* top padding for close button */
 }
+
 
 #image-modal img {
   max-width: 80vw;
@@ -268,6 +259,17 @@ section {
   height: auto;
   object-fit: contain;
   border-radius: 10px;
+}
+
+/* ✅ FIX CLOSE BUTTON INSIDE image-box */
+#image-modal .close-img {
+  position: relative;
+  top: 20px;
+  right: 25px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: white;
+  z-index: 9999;
 }
 
 
