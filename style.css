@@ -257,8 +257,8 @@ section {
 /* ✅ FIX CLOSE BUTTON INSIDE image-box */
 #image-modal .close-img {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 25px;
   font-size: 2.5rem;
   cursor: pointer;
   color: white;
