@@ -242,14 +242,15 @@ section {
 }
 
 #modal-img {
-  width: auto;
+  width: 100%;
   height: auto;
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 80vh;
   object-fit: contain;
   border-radius: 10px;
   margin: 0;
-  transform-origin: center center;
+  display: block;
+  transform-origin: center;
 }
 @media (max-width: 600px) {
   #modal-img {
