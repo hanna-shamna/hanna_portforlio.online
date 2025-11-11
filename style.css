@@ -394,6 +394,14 @@ body.modal-open {
   color: #fff;
 }
 
+.small-modal-img {
+  display: block;
+  max-width: 120px;      
+  max-height: 120px;
+  margin: 0 auto 15px auto; /* center and spacing */
+  border-radius: 5px;
+}
+
 /* === Footer === */
 footer {
   text-align: center;
