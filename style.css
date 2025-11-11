@@ -360,11 +360,6 @@ footer {
     height: auto;
   }
 
-  #modal-img {
-    max-width: 95vw;
-    max-height: 70vh;
-  }
-
   .modal-content {
     width: 92%;
     max-height: 80vh;
