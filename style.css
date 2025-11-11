@@ -245,6 +245,15 @@ section {
   align-items: center;
 }
 
+#image-modal img {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
 /* ✅ FIX CLOSE BUTTON INSIDE image-box */
 #image-modal .close-img {
   position: absolute;
